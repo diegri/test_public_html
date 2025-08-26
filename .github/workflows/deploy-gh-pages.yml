@@ -33,7 +33,7 @@ jobs:
       - name: Copy static site
         run: | 
           mkdir ./_site
-          cp ./* ./_site/.
+          cp -r ./* ./_site/.
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
